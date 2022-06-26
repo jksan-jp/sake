@@ -28,6 +28,5 @@ class MyApp extends StatelessWidget {
         routeInformationParser: _router.routeInformationParser,
         routerDelegate: _router.routerDelegate,
         title: 'GoRouter Example',
-        theme: ThemeData.dark(),
       );
 }
