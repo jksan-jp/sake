@@ -20,11 +20,14 @@ class MyApp extends StatelessWidget {
     GoRoute(path: '/post', builder: (context, state) => const PostScreen()),
   ]);
 
+  MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) => MaterialApp.router(
         routeInformationProvider: _router.routeInformationProvider,
         routeInformationParser: _router.routeInformationParser,
         routerDelegate: _router.routerDelegate,
         title: 'GoRouter Example',
+        theme: ThemeData.dark(),
       );
 }
